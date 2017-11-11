@@ -1,0 +1,212 @@
+<html>
+<head>
+  <title> Little Beetle Online Teaching---CSS Grammer
+</title>
+<!--title  (Queston 1)-->
+<style type="text/css">
+        b{
+          color: black;
+          font-size: 60px;
+          text-align: left;
+          font-style: normal;
+          font-family: "微软雅黑"
+          background-color:gray;
+          background-position: auto;
+   }
+      c{
+        color: yellow;
+        font-size: 50px;
+      }
+      d{
+        background-color: gray;
+      }
+    
+
+</style>
+<style type="text/css">
+        body
+        { background-image: url("Background3.jpg");
+          background-repeat:repeat;         
+        } 
+        Beetle.pos_abs{
+              position:absolute;
+              left:380px;
+              top:100px;}    
+</style>
+<!--Navigation-->
+<style type="text/css">
+      .navigation ul{
+        margin: 1px;
+        padding: 1px;
+        list-style-type: none;
+         position:absolute;
+              top:300px;
+      }
+
+      .navigation li{
+        margin:0 0 4px 0;
+      }
+      .navigation a{
+        display: block;
+        color:black;
+        background-color: white;
+        width: 130px;
+        padding: 50px 20px;
+        text-decoration: none;
+        border: 3px  solid blue;
+       font-size:23px;
+      }
+      .navigation a:hover{
+        background-color: yellow;
+      }
+ </style>
+</head>
+<body>
+<a name="top"></a>
+<Beetle class = "po<a name="top"></a>
+        <img src="insect yellow.png"
+            title="Believe Yourself !" 
+            width="150"   height="160"></Beetle>
+
+<!--Table model 1-->
+<table border=0 bordercolor=red width=100% align=center>
+
+<tr><td align=left colspan=2>
+       <font color = "black" face = "黑体"  size="+6" >
+       Little Beetle Online Teaching
+</td>
+<td align=right colspan=1>
+<div style = "text-align:right;"> 
+      <input class="placeholder" value="Search keywords......" autocomplete="on" >
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td = width = 10% align=center>
+<!-- Navigation left -->
+<div class="navigation">
+         <ul>
+          <font color = "black" face = "黑体"  size="+3"><li>Css Foundation </li></font>
+         <li><a href ="https://201632110216.github.io/index-tec2-Css">
+         Brief Introduction Of Css</a></li>
+         <li><a href = "https://201632110216.github.io/index-tec2-CSSGrammar">
+         Css Grammar</a></li>
+         <font color = "black" face = "黑体"  size="+3"><li>
+         Css Style </li></font>
+         <li><a href = "https://201632110216.github.io/index-tec2-CSSBackground">
+         CSS Background</a></li>
+         <li><a href = "https://201632110216.github.io/index-tec2-Fonts ">
+         Fonts </a></li>
+         <font color = "black" face = "黑体"  size="+3"><li>
+         Css Selector </li></font>
+         <li><a href = "https://201632110216.github.io/index-tec2-CssSelector">
+         Css Selector</a></li>
+</ul></div>
+</td>
+
+<td width=50% align=left>
+<br><br><br><br><br><br><br><br><br><br>
+  <b>Css Basic Grammar </b>
+<br><br><br><br><br><br><br>
+<font color = "black" face = "仿宋"  size="+3">
+<!--Start input  the words or pictures   -->
+<c>CSS Grammar</c>
+<br><br>
+The CSS rule consists of two main parts: selectors, and one or more declarations.<br>
+<d>selector {declaration1; declaration2; ... declarationN }</d>
+<br><br>
+Selectors are usually HTML elements that you need to change styles.<br>
+Each declaration consists of one attribute and one value.<br>
+The property  is the style attribute you want to set style attribute. Each attribute has a value. Attributes and values are separated by colons.<br>
+<d>selector {property: value}</d><br><br>
+The following line of code is used to define the text color within the H1 element as red, and to set the font size to 14 pixels.<br>
+In this case, H1 is a selector, color and font-size are attributes, and red and 14px are values.<br>
+<d>h1 {color:red; font-size:14px;}</d><br><br>
+The schematic below shows you the structure of the code above:<br>
+<br>
+<img src="Grammar.jpg" width ="679" height = "181" />
+<br><br><br>
+<c>Different Writing Methods And Units Of Value</c>
+<br><br>
+In addition to the English word red, we can also use the binary color value #ff0000 sixteen:<br>
+<d>p { color: #ff0000; }</d><br><br>
+In order to save bytes, we can use the abbreviated form of CSS:
+<br>
+<d>p { color: #f00; }</d><br><br>
+We can also use RGB values in two ways:<br>
+<d>p { color: rgb(255,0,0); }</d><br>
+<d>p { color: rgb(100%,0%,0%); }</d><br>
+Notice that when you use the percentage of RGB, you have to write percentage symbols even when you're on duty at 0. But in other cases, you don't need to do that. For example, when the size is 0 pixels, after 0, there is no need to use the PX unit, because 0 is 0, no matter what the unit is.
+<br><br><br>
+<c>Remember To Write Quotes</c>
+<br><br>
+Tip: if the value is a few words, give the value in quotation marks:<br>
+<d>p {font-family: "sans serif";}</d>
+<br><br><br>
+<c>Multiple Declarations:</c>
+<br><br>
+Tip: if you want to define more than one declaration, you need to separate each statement with a semicolon. The following example shows how to define a middle paragraph of a red text. The last rule is that you don't need a semicolon, because the semicolon is a delimiter in English, not an end symbol. However, most experienced designers add semicolons at the end of each statement, and the advantage of this is that when you add or subtract statements from existing rules, you can minimize the possibility of errors. Just like this:<br>
+<d>p {text-align:center; color:red;} </d>
+<br><br>
+You should describe only one property on each line, so that the readability of the style definition can be enhanced, just like this:<br>
+<d>p {
+  text-align: center;
+  color: black;
+  font-family: arial;
+}</d>
+<br><br><br>
+<c>Space And Size</c>
+<br><br>
+Most stylesheets contain more than one rule, and most rules contain more than one declaration. The use of multiple declarations and spaces makes the stylesheet easier to edit:<br>
+<d>body {
+  color: #000;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, Palatino, serif;
+  }</d><br><br>
+  Whether or not to include spaces does not affect the work of CSS in browsers. Similarly, unlike XHTML, CSS is insensitive to case size. But there is an exception: class and ID names are sensitive to the case if they involve working with the HTML document.
+
+</font>
+<!-- END -->         
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!--Navigation  right-->
+</td><td width=10% align=left>
+<div class="navigation">
+         <ul>
+          <font color = "black" face = "黑体"  size="+5"><li>Navigation</li></font>
+         <li><a href ="https://201632110216.github.io/index-tec2">
+         Home</a></li>
+        
+         <li><a href = "https://201632110216.github.io/index-tec2-HTML">
+         HTML</a></li>
+
+         <li><a href = "https://201632110216.github.io/index-tec2-CSS">
+         CSS</a></li>
+
+         <li><a href = "https://201632110216.github.io/index-tec2-CSS3">
+         CSS3</a></li>
+
+         <li><a href = "https://201632110216.github.io/index-tec2-JS">
+         JavaScript</a></li>
+
+         <li><a href = "https://201632110216.github.io/index-tec2-AboutUs">
+         About  us </a></li>
+         </ul></div>    
+</td></tr>
+<td  width = 10% align=center>
+<a href="#top"><c>Return Top</c></a> 
+
+<br><br><br><br><br>
+</td>
+</tr>
+<tr><td align=center colspan=3> <br>
+Little Beetle Online Teaching  @  https://201632110216.github.io/index-tec2-CSS Grammer  2017.11.11
+<br></td></tr>
+</table>
+
+</body>
+</html>

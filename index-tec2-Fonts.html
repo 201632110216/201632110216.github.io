@@ -1,0 +1,270 @@
+<html>
+<head>
+  <title> Little Beetle Online Teaching---Fonts 
+</title>
+<!--title  (Queston 1)-->
+<style type="text/css">
+        b{
+          color: black;
+          font-size: 60px;
+          text-align: left;
+          font-style: normal;
+          font-family: "微软雅黑"
+          background-color:gray;
+          background-position: auto;
+   }
+      c{
+        color: yellow;
+        font-size: 50px;
+      }
+      d{
+        background-color: gray;
+      }
+      e{
+        color: red;
+      }
+    
+
+</style>
+<style type="text/css">
+        body
+        { background-image: url("Background3.jpg");
+          background-repeat:repeat;         
+        } 
+        Beetle.pos_abs{
+              position:absolute;
+              left:380px;
+              top:100px;}    
+</style>
+<!--Navigation-->
+<style type="text/css">
+      .navigation ul{
+        margin: 1px;
+        padding: 1px;
+        list-style-type: none;
+         position:absolute;
+              top:300px;
+      }
+
+      .navigation li{
+        margin:0 0 4px 0;
+      }
+      .navigation a{
+        display: block;
+        color:black;
+        background-color: white;
+        width: 130px;
+        padding: 50px 20px;
+        text-decoration: none;
+        border: 3px  solid blue;
+       font-size:23px;
+      }
+      .navigation a:hover{
+        background-color: yellow;
+      }
+ </style>
+</head>
+<body>
+<a name="top"></a>
+<Beetle class = "po<a name="top"></a>
+        <img src="insect yellow.png"
+            title="Believe Yourself !" 
+            width="150"   height="160"></Beetle>
+
+<!--Table model 1-->
+<table border=0 bordercolor=red width=100% align=center>
+
+<tr><td align=left colspan=2>
+       <font color = "black" face = "黑体"  size="+6" >
+       Little Beetle Online Teaching
+</td>
+<td align=right colspan=1>
+<div style = "text-align:right;"> 
+      <input class="placeholder" value="Search keywords......" autocomplete="on" >
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td = width = 10% align=center>
+<!-- Navigation left -->
+<div class="navigation">
+         <ul>
+          <font color = "black" face = "黑体"  size="+3"><li>Css Foundation </li></font>
+         <li><a href ="https://201632110216.github.io/index-tec2-Css">
+         Brief Introduction Of Css</a></li>
+         <li><a href = "https://201632110216.github.io/index-tec2-CSSGrammar">
+         Css Grammar</a></li>
+         <font color = "black" face = "黑体"  size="+3"><li>
+         Css Style </li></font>
+         <li><a href = "https://201632110216.github.io/index-tec2-CSSBackground">
+         CSS Background</a></li>
+         <li><a href = "https://201632110216.github.io/index-tec2-Fonts ">
+         Fonts </a></li>
+         <font color = "black" face = "黑体"  size="+3"><li>
+         Css Selector </li></font>
+         <li><a href = "https://201632110216.github.io/index-tec2-CssSelector">
+         Css Selector</a></li>
+</ul></div>
+</td>
+
+<td width=50% align=left>
+<br><br><br><br><br><br><br><br><br><br>
+  <b>CSS Fonts</b>
+<br><br><br><br><br><br>
+<font color = "black" face = "仿宋"  size="+3">
+<!--Start input  the words or pictures   -->
+The CSS font property defines the font family, size, bold, style (such as italic) and deformation (such as small uppercase letters) of the text.<br><br><br>
+<c>CSS Font Series</c>
+<br><br>
+In CSS, there are two different types of font names:<br>
+Generic font series - a font system with similar appearance (e.g., Serif or Monospace)
+<br>
+Specific font series - specific font series (such as "Times" or "Courier")<br>
+In addition to a variety of specific font families, CSS defines 5 generic font families:
+<br>
+Serif font<br>
+Sans-serif font<br>
+Monospace font<br>
+Cursive font<br>
+Fantasy font<br><br><br>
+<c>Use Universal Font Series</c>
+<br><br>
+If you want the document to use a sans-serif font, but you don't care about which font, the following is a proper statement<br>
+<d>body {font-family: sans-serif;}</d>
+<br><br>
+In this way, the user agent selects a font (such as Helvetica) from the sans-serif font series and applies it to the body element. Because of inheritance, this font selection will also apply to all the elements contained in the body element unless it is covered by a more specific selector.<br><br><br>
+<c>Specified Font Series</c>
+<br><br>
+In addition to using the generic font family, you can also set more specific fonts through the font-family property.<br>
+The following example sets the Georgia font for all H1 elements:<br>
+<d>h1 {font-family: Georgia;}</d><br><br>
+This rule will also have another problem, if the Georgia font is not installed on the user agent, the user agent can only use the default font to display the H1 elements.<br>
+We can solve this problem by combining specific font names and generic font families:<br>
+<d>h1 {font-family: Georgia, serif;}</d><br><br>
+If the user does not install Georgia, but installs the Times font (a font in the serif font Series), the user agent may use Times for the H1 element. Although Times and Georgia do not match perfectly, they are at least close enough.<br>
+Therefore, we recommend that all of the font-family rules provide a generic font family. This provides a posterior path where a candidate font can be selected when the user agent fails to provide a specific font matching the rule.<br>
+If you're familiar with fonts, you can also specify a series of similar fonts for a given element. To do this, you need to arrange these fonts in precedence, and then use commas to connect them:<br>Example:<br>
+<d>p {font-family: Times, TimesNR, 'New Century Schoolbook',
+     Georgia, 'New York', serif;}</d><br>
+According to this list, the user agent looks up the fonts in the order in which they are listed. If all of the fonts listed are unavailable, you can simply choose an available serif font.<br><br><br>
+<c>Quoting</c>
+<br><br>
+As you may have noticed, single quotes are used in the examples above. Only when the font name in one or more spaces (like New York), or if the font name consists of # or $symbols, just need to add quotes in the font-family statement.<br>
+Single quotes or double quotes are acceptable. However, if you put a font-family attribute in the style property of HTML, you need to use the quotation marks that are not used by the property itself:<br>
+<d><'p style="font-family: Times, TimesNR, 'New Century Schoolbook', Georgia,
+ 'New York', serif;">...</p></d>
+<br><br><br>
+<c>Font Style</c>
+<br><br>
+The font-style attribute is most commonly used to specify Italic text.<br>
+This property has three values:<br>
+Normal - text normal display<br>
+Italic - Text Italic display<br>
+Oblique - text skew display<br><br>Example:<br>
+<d>p.normal {font-style:normal;}
+p.italic {font-style:italic;}
+p.oblique {font-style:oblique;}</d>
+<br><br><br>
+<c>Font Size</c>
+<br><br>
+<e>Font-size</e> property sets the size of the text.<br>
+The ability to manage text size is important in the web design domain. However, you should not make the paragraph look like a title by adjusting the size of the text, or make the title look like a paragraph.<br>
+Always use the correct HTML title, such as using <'h1> - <'h6> to mark the title, and use <'p> to mark the paragraph.<br>
+The font-size value can be absolute or relative.<br>
+Absolute value:<br>
+Set the text to the specified size<br>
+Users are not allowed to change the size of text in all browsers (which is not good for usability)<br>
+The absolute size is useful in determining the physical size of the output
+Relative size:<br>
+Set the size relative to the surrounding elements<br>
+Allows users to change text size in browsers<br>
+Note: if you don't specify font size, the default size of plain text (such as paragraphs) is 16 pixels (16px=1em).<br><br><br>
+<c>Use Pixel To Set Font Size</c>
+<br><br>
+The size of the text can be completely controlled by setting the text size of the pixel:
+<br>Example:<br>
+<d>h1 {font-size:60px;}
+h2 {font-size:40px;}
+p {font-size:14px;}</d><br><br>
+In Firefox, Chrome, and Safari, you can reset the text size of the above example, but not in Internet Explorer.<br>
+Although you can adjust the size of the text through the browser's zoom tool, this is actually an adjustment to the entire page, not just the text.<br><br><br>
+<c>Use em To Set Font Size</c>
+<br><br>
+If you want to avoid adjusting text in Internet Explorer, many developers use EM units instead of pixels.<br>
+W3C recommends the use of EM size units.<br>
+1em is equal to the current font size. If the font-size of an element is 16 pixels, then 1em is equal to 16 pixels for this element. When you set the font size, the value of EM changes with the font size of the parent element.<br>
+The default text size in the browser is 16 pixels. So the default size of 1em is 16 pixels.<br>
+You can use this formula to convert pixels to em:pixels/16=em<br>
+(Note: 16 equals the default font size of the parent element, assuming that the parent element's font-size is 20px, then the formula needs to be changed to: pixels/20=em)<br>
+Example:<br>
+<d>h1 {font-size:3.75em;} /* 60px/16=3.75em */<br>
+h2 {font-size:2.5em;}  /* 40px/16=2.5em */<br>
+p {font-size:0.875em;} /* 14px/16=0.875em */<br></d>
+<br>
+In the above example, the size of the text in EM is the same as the pixel in the previous example. However, if you use the EM unit, you can adjust the text size in all browsers.<br>
+Unfortunately, there are still problems in IE. When the text is reset, it will be larger or smaller than the normal size.<br><br><br>
+<c>Combined Use Percentages And EM</c><br><br>
+The most effective solution in all browsers is to set the default font-size value for the body element (parent element) with a percentage:<br>
+Example:<br>
+<d>body {font-size:100%;}
+h1 {font-size:3.75em;}
+h2 {font-size:2.5em;}
+p {font-size:0.875em;}</d>
+<br><br><br>
+LIttle Beetle`s code is very effective. In all browsers, you can display the same text size, and allow all browsers to zoom in on the size of the text.
+<br><br>
+<img src="Font.jpg"  width="900" height="259"  />
+
+
+
+
+
+
+
+
+
+
+
+</font>
+<!-- END -->         
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!--Navigation  right-->
+</td><td width=10% align=left>
+<div class="navigation">
+         <ul>
+          <font color = "black" face = "黑体"  size="+5"><li>Navigation</li></font>
+         <li><a href ="https://201632110216.github.io/index-tec2">
+         Home</a></li>
+        
+         <li><a href = "https://201632110216.github.io/index-tec2-HTML">
+         HTML</a></li>
+
+         <li><a href = "https://201632110216.github.io/index-tec2-CSS">
+         CSS</a></li>
+
+         <li><a href = "https://201632110216.github.io/index-tec2-CSS3">
+         CSS3</a></li>
+
+         <li><a href = "https://201632110216.github.io/index-tec2-JS">
+         JavaScript</a></li>
+
+         <li><a href = "https://201632110216.github.io/index-tec2-AboutUs">
+         About  us </a></li>
+         </ul></div>    
+</td></tr>
+<td  width = 10% align=center>
+<a href="#top"><c>Return Top</c></a> 
+
+<br><br><br><br><br>
+</td>
+</tr>
+<tr><td align=center colspan=3> <br>
+Little Beetle Online Teaching  @  https://201632110216.github.io/index-tec2-Fonts 2017.11.11
+<br></td></tr>
+</table>
+
+</body>
+</html>

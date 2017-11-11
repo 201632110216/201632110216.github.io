@@ -1,0 +1,317 @@
+<html>
+<head>
+  <title> Little Beetle Online Teaching---CSS Selector
+</title>
+<!--title  (Queston 1)-->
+<style type="text/css">
+        b{
+          color: black;
+          font-size: 60px;
+          text-align: left;
+          font-style: normal;
+          font-family: "微软雅黑"
+          background-color:gray;
+          background-position: auto;
+   }
+      c{
+        color: yellow;
+        font-size: 50px;
+      }
+      d{
+        background-color: gray;
+      }
+      e{
+        color: red;
+      }
+      f{
+        color: green;
+        font-size: 50px;
+      }
+    
+
+</style>
+<style type="text/css">
+        body
+        { background-image: url("Background3.jpg");
+          background-repeat:repeat;         
+        } 
+        Beetle.pos_abs{
+              position:absolute;
+              left:380px;
+              top:100px;}    
+</style>
+<!--Navigation-->
+<style type="text/css">
+      .navigation ul{
+        margin: 1px;
+        padding: 1px;
+        list-style-type: none;
+         position:absolute;
+              top:300px;
+      }
+
+      .navigation li{
+        margin:0 0 4px 0;
+      }
+      .navigation a{
+        display: block;
+        color:black;
+        background-color: white;
+        width: 130px;
+        padding: 50px 20px;
+        text-decoration: none;
+        border: 3px  solid blue;
+       font-size:23px;
+      }
+      .navigation a:hover{
+        background-color: yellow;
+      }
+ </style>
+</head>
+<body>
+<a name="top"></a>
+<Beetle class = "po<a name="top"></a>
+        <img src="insect yellow.png"
+            title="Believe Yourself !" 
+            width="150"   height="160"></Beetle>
+
+<!--Table model 1-->
+<table border=0 bordercolor=red width=100% align=center>
+
+<tr><td align=left colspan=2>
+       <font color = "black" face = "黑体"  size="+6" >
+       Little Beetle Online Teaching
+</td>
+<td align=right colspan=1>
+<div style = "text-align:right;"> 
+      <input class="placeholder" value="Search keywords......" autocomplete="on" >
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td = width = 10% align=center>
+<!-- Navigation left -->
+<div class="navigation">
+         <ul>
+          <font color = "black" face = "黑体"  size="+3"><li>Css Foundation </li></font>
+         <li><a href ="https://201632110216.github.io/index-tec2-Css">
+         Brief Introduction Of Css</a></li>
+         <li><a href = "https://201632110216.github.io/index-tec2-CSSGrammar">
+         Css Grammar</a></li>
+         <font color = "black" face = "黑体"  size="+3"><li>
+         Css Style </li></font>
+         <li><a href = "https://201632110216.github.io/index-tec2-CSSBackground">
+         CSS Background</a></li>
+         <li><a href = "https://201632110216.github.io/index-tec2-Fonts ">
+         Fonts </a></li>
+         <font color = "black" face = "黑体"  size="+3"><li>
+         Css Selector </li></font>
+         <li><a href = "https://201632110216.github.io/index-tec2-CssSelector">
+         Css Selector</a></li>
+</ul></div>
+</td>
+
+<td width=50% align=left>
+<br><br><br><br><br><br><br><br><br><br>
+  <b>CSS Selector</b>
+<br><br><br><br><br><br>
+<font color = "black" face = "仿宋"  size="+3">
+<!--Start input  the words or pictures   -->
+There are many selectors in CSS,but Little Beetle just  teach three Frequently-used selector.There are : id selector,class selector,and element selector.<br><br><br>
+<f>id Selector</f>
+<br><br>
+The id selector can specify a particular style for the HTML element with a specific id.
+<br>The id selector to "#" to define.<br><br>
+The next two id selectors, the first one to define the element's color is red, and the second defined element is green:<br>
+<d>#red {color:red;}<br>
+#green {color:green;}</d><br><br>
+In the following HTML code, the ID attribute is shown as red by the P element of red, and the P element of the ID attribute green is shown to be green.<br>
+<d><'p id= "red" > this paragraph is red. <br>
+<'p id= "green" > this paragraph is green. </d> <br> <br>
+Note: the ID property can only appear once in each HTML document. If you want to know why, please refer to the XHTML: website refactoring. <br> <br> <br> 
+<c>id Selectors And Derived Selectors</c><br> <br> 
+In modern layouts, ID selectors are often used to create derived selectors. <br> 
+#sidebar p {<br> 
+  font-style: italic;<br> 
+  text-align: right;<br> 
+  margin-top: 0.5em;<br> 
+  }<br> 
+<br> 
+The style above applies only to paragraphs that appear in elements of ID sidebar. This element is likely to be a div or a table element, although it can also be a table or other block level element. It can even be an inline element, such as <'em></'em> or <'span></'span>, but this usage is illegal, because it can not embed <'p> in inline elements in <'span>.<br> <br> <br> 
+<c>A selector, multiple uses</c><br> <br> 
+Even if the element marked as sidebar can only appear once in the document, the ID selector can be used many times as a derivative selector:<br>
+<d>#sidebar p {<br>
+  font-style: italic;<br>
+  text-align: right;<br>
+  margin-top: 0.5em;<br>
+  }<br>
+
+#sidebar h2 {<br>
+  font-size: 1em;<br>
+  font-weight: normal;<br>
+  font-style: italic;<br>
+  margin: 0;<br>
+  line-height: 1.5;<br>
+  text-align: right;<br>
+  }<br>
+</d><br>
+Here, unlike the other P elements in the page, the P elements in sidebar are treated specifically, and at the same time, unlike all other H2 elements in the page, the H2 elements in sidebar are treated differently.<br><br><br>
+<c>Separate Selector</c><br><br>
+id  selector can function independently even if it is not used to create a derivative selector:<br>
+<d>#sidebar {<br>
+  border: 1px dotted #000;<br>
+  padding: 10px;<br>
+  }</d><br><br>
+According to this rule, the element id of sidebar will have a pixel wide black dot border, and there will be 10 pixels wide margins (padding, inner blank) around it. The old version of the Windows/IE browser might ignore this rule unless you specifically define the element that the selector belongs to:<br>
+
+<d>div#sidebar {<br>
+  border: 1px dotted #000;<br>
+  padding: 10px;<br>
+  }</d><br>
+<br><br><br>
+<f>Class Selector</f><br><br><br>
+In CSS, classes displayed by a dot:<br>
+<d>.center {text-align: center}</d><br>
+n the example above, all HTML elements with center classes are centered.<br>
+In the following HTML code, both H1 and P elements have center classes. This means that both will follow the rules in the ".Center" selector.<br>
+<d><'h1 class="center"><br>
+This heading will be center-aligned<br>
+<'/h1><br>
+<br>
+<'p class="center"><br>
+This paragraph will also be center-aligned.<br>
+</'p></d><br>
+Note: the first character of the class name cannot use numbers! It doesn't work in Mozilla or Firefox.<br><br><br>
+<c>As A Derivative Selector:</c>
+<br><br>
+Like id selector, class selector  also can be used as a derivative selector:<br>
+<d>.fancy td {<br>
+  color: #f60;<br>
+  background: #666;<br>
+  }</d><br><br>
+In this example, the larger element of the class name fancy, inside the table unit, displays orange characters in a gray background. A larger element called fancy might be a table or a div.
+<br><br><br>
+<c>Elements can also be chosen based on their classes:</c>
+<br><br>
+<d>td.fancy {<br>
+  color: #f60;<br>
+  background: #666;<br>
+  }</d><br><br>
+In the example above, the table cell of the class name fancy will be orange with a gray background.<br>
+<d><'td class="fancy"></d><br><br>
+You can assign the class fancy to any table element at any number of times. Those cells marked with fancy will be orange with a gray background. Cells that do not have a class assigned to fancy are not affected by this rule. One more thing to note is that the paragraphs of class for fancy will not be orange with a gray background, and of course, any other element that is labeled fancy will not be affected by this rule. This is due to the way we write this rule, and this effect is limited to the table cell labeled as fancy (that is, using the TD element to select the fancy class).
+<br><br><br><br>
+<f>Element Selector</f>
+<br><br>
+The most common CSS selector is the element selector. In other words, the elements of a document are the most basic selectors.<br>
+If you set the style of HTML, the selector will usually be a HTML element, such as P, H1, EM, a, and even HTML itself:<br>
+<d>html {color:black;}<br>
+h1 {color:blue;}<br>
+h2 {color:silver;}<br></d><br>
+You can be a style switches from one element to another element.<br>
+If you decide to the text of the paragraph above (not H1 elements) set to gray. Just take the H1 selector to p:<br>
+<d>html {color:black;}<br>
+p {color:gray;}<br>
+h2 {color:silver;}<br></d><br><br>
+<c>Type Selectors</c><br><br>
+In the W3C standard, the element selector is also called the type selector.<br>
+The type selector matches the name of the document language element type. The type selector matches each instance of the element type in the document tree."<br>
+The following rules match all the H1 elements in the document tree:<br>
+<d>H1 {font-family: sans-serif;}<br></d>
+Therefore, we can also set the style for the elements in the XML document:<br><br><br>
+<c>XML Document:</c><br><br>
+<d><'?xml version="1.0" encoding="ISO-8859-1"?><br>
+<'?xml-stylesheet type="text/css" href="note.css"?><br>
+<'note><br>
+<'to>George<'/to><br>
+<'from>John<'/from><br>
+<'heading>Reminder<'/heading><br>
+<'body>Don't forget the meeting!<'/body><br>
+<'/note></d>
+<br><br><br><br>
+<c>CSS Document</c>
+<br><br>
+<d>
+note<br>
+  {<br>
+  font-family:Verdana, Arial;<br>
+  margin-left:30px;<br>
+  }<br>
+to<br>
+  {<br>
+  font-size:28px;<br>
+  display: block;<br>
+  }<br>
+from<br>
+  {<br>
+  font-size:28px;<br>
+  display: block;<br>
+  }<br>
+heading<br>
+  {<br>
+  color: red;<br>
+  font-size:60px;<br>
+  display: block;<br>
+  }<br>
+body<br>
+  {<br>
+  color: blue;<br>
+  font-size:35px;<br>
+  display: block;<br>
+  }</d><br><br>
+In the example above, you can see the CSS selector (type selector) can set the elements in the XML document style.
+
+
+
+
+
+
+
+
+
+
+
+
+</font>
+<!-- END -->         
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!--Navigation  right-->
+</td><td width=10% align=left>
+<div class="navigation">
+         <ul>
+          <font color = "black" face = "黑体"  size="+5"><li>Navigation</li></font>
+         <li><a href ="https://201632110216.github.io/index-tec2">
+         Home</a></li>
+        
+         <li><a href = "https://201632110216.github.io/index-tec2-HTML">
+         HTML</a></li>
+
+         <li><a href = "https://201632110216.github.io/index-tec2-CSS">
+         CSS</a></li>
+
+         <li><a href = "https://201632110216.github.io/index-tec2-CSS3">
+         CSS3</a></li>
+
+         <li><a href = "https://201632110216.github.io/index-tec2-JS">
+         JavaScript</a></li>
+
+         <li><a href = "https://201632110216.github.io/index-tec2-AboutUs">
+         About  us </a></li>
+         </ul></div>    
+</td></tr>
+<td  width = 10% align=center>
+<a href="#top"><c>Return Top</c></a> 
+
+<br><br><br><br><br>
+</td>
+</tr>
+<tr><td align=center colspan=3> <br>
+Little Beetle Online Teaching  @  https://201632110216.github.io/index-tec2-CSS Selector 2017.11.11
+<br></td></tr>
+</table>
+
+</body>
+</html>

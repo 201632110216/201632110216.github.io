@@ -1,0 +1,191 @@
+<html>
+<head>
+  <title> Little Beetle Online Teaching---CSS
+</title>
+<!--title  (Queston 1)-->
+<style type="text/css">
+        b{
+          color: black;
+          font-size: 60px;
+          text-align: left;
+          font-style: normal;
+          font-family: "微软雅黑"
+          background-color:gray;
+          background-position: auto;
+   }
+      c{
+        color: yellow;
+        font-size: 50px;
+      }
+    
+
+</style>
+<style type="text/css">
+        body
+        { background-image: url("Background3.jpg");
+          background-repeat:repeat;         
+        } 
+        Beetle.pos_abs{
+              position:absolute;
+              left:380px;
+              top:100px;}    
+</style>
+<!--Navigation-->
+<style type="text/css">
+      .navigation ul{
+        margin: 1px;
+        padding: 1px;
+        list-style-type: none;
+         position:absolute;
+              top:300px;
+      }
+
+      .navigation li{
+        margin:0 0 4px 0;
+      }
+      .navigation a{
+        display: block;
+        color:black;
+        background-color: white;
+        width: 130px;
+        padding: 50px 20px;
+        text-decoration: none;
+        border: 3px  solid blue;
+       font-size:23px;
+      }
+      .navigation a:hover{
+        background-color: yellow;
+      }
+ </style>
+</head>
+<body>
+<a name="top"></a>
+<Beetle class = "po<a name="top"></a>
+        <img src="insect yellow.png"
+            title="Believe Yourself !" 
+            width="150"   height="160"></Beetle>
+
+<!--Table model 1-->
+<table border=0 bordercolor=red width=100% align=center>
+
+<tr><td align=left colspan=2>
+       <font color = "black" face = "黑体"  size="+6" >
+       Little Beetle Online Teaching
+</td>
+<td align=right colspan=1>
+<div style = "text-align:right;"> 
+      <input class="placeholder" value="Search keywords......" autocomplete="on" >
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td = width = 10% align=center>
+<!-- Navigation left -->
+<div class="navigation">
+         <ul>
+          <font color = "black" face = "黑体"  size="+3"><li>Css Foundation </li></font>
+         <li><a href ="https://201632110216.github.io/index-tec2-Css">
+         Brief Introduction Of Css</a></li>
+         <li><a href = "https://201632110216.github.io/index-tec2-CSSGrammar">
+         Css Grammar</a></li>
+         <font color = "black" face = "黑体"  size="+3"><li>
+         Css Style </li></font>
+         <li><a href = "https://201632110216.github.io/index-tec2-CSSBackground">
+         CSS Background</a></li>
+         <li><a href = "https://201632110216.github.io/index-tec2-Fonts ">
+         Fonts </a></li>
+         <font color = "black" face = "黑体"  size="+3"><li>
+         Css Selector </li></font>
+         <li><a href = "https://201632110216.github.io/index-tec2-CssSelector">
+         Css Selector</a></li>
+</ul></div>
+</td>
+
+<td width=50% align=left>
+<br><br><br><br><br><br><br><br><br><br>
+  <b>Css Foundation</b>
+<br><br><br><br><br><br><br>
+<font color = "black" face = "仿宋"  size="+3">
+<!--Start input  the words or pictures   -->
+<c>Basic knowledge needed</c>
+<br><br>
+Before continuing to study, you need to have a basic understanding of the following knowledge:
+HTML.
+If you want to learn these projects first, please visit the <a href="201632110216.github.io/index-tec2-HTML">    HTML </a>.
+<br><br><br>
+<c>CSS overview</c>
+<br><br>
+1.CSS refers to cascading style sheets (Cascading Style Sheets)<br>
+2.The style defines how to display HTML elements<br>
+3.The style is usually stored in the stylesheet<br>
+4.Adding  styles to HTML 4 is to solve the problem of separating content from performance<br>
+5. external style sheets can greatly improve work efficiency<br>
+6. external style sheets are usually stored in CSS files<br>
+7. more than one style definition can be cascaded into one<br>
+<br><br><br>
+<c>Style solves a common problem</c>
+<br><br>
+The HTML tag was originally designed to define document content. By using  <'h1'>, <'p'>, <'table'> such a label, HTML's intention is to express "is the title of this", "this is the end", "this is a table of such information. At the same time, the document layout is done by the browser without any formatting tags.<br>
+Because of the major browsers (Netscape and Internet Explorer) continue to be the new HTML tags and attributes (such as font tags and color attributes) added to the HTML specification, create the document content clearly is independent of the document presentation site becomes more and more difficult.<br>
+In order to solve this problem, the World Wide Web Consortium (W3C), a non-profit Standardization Alliance, undertake the HTML standardization mission, and create a style in HTML 4 (Style).<br>
+All mainstream browsers support cascading style sheets.
+<br><br><br>
+<c>The stylesheet greatly improves work efficiency</c>
+<br><br>
+The stylesheet defines how to display HTML elements, just as the font tags and color attributes of HTML 3.2 do. Styles are usually stored in external.Css files. By simply editing a simple CSS document, the external stylesheet enables you to change the layout and appearance of all the pages in the site at the same time.
+By allowing simultaneous control of the styles and layouts of multiple pages, CSS can be a breakthrough in the WEB design field. As a web developer, you can define styles for each HTML element and apply it to any number of pages you want. If you need a global update, simply change the style, and all elements in the site are automatically updated.
+<br><br><br>
+<c>Multiple styles will be stacked into one</c>
+<br><br>
+Style sheets allow you to specify style information in a variety of ways. The style can be specified in a single HTML element, in the head element of the HTML page, or in an external CSS file. You can even refer to multiple external style sheets within the same HTML document.
+<br><br><br>
+<c>What style will be used when the same HTML element is defined by more than one style?</c>
+<br><br>
+In general, all styles are stacked in a new virtual stylesheet based on the following rules, in which number 4 has the highest priority.<br>
+1.Browser default settings<br>
+2.External style sheet<br>
+3.Internal style sheet (located inside the <'head'> tag)<br>
+4.Inline style (within the HTML element)<br>
+Therefore, an inline style (in the inside of a HTML element) has the highest priority, which means that it will override a style statement below: style statement in <'head'> tags, a style statement in an external style sheet, or in a browser style statement (default).
+</font>
+<!-- END -->         
+<br><br><br><br><br><br><br><br>
+<!--Navigation  right-->
+</td><td width=10% align=left>
+<div class="navigation">
+         <ul>
+          <font color = "black" face = "黑体"  size="+5"><li>Navigation</li></font>
+         <li><a href ="https://201632110216.github.io/index-tec2">
+         Home</a></li>
+        
+         <li><a href = "https://201632110216.github.io/index-tec2-HTML">
+         HTML</a></li>
+
+         <li><a href = "https://201632110216.github.io/index-tec2-CSS">
+         CSS</a></li>
+
+         <li><a href = "https://201632110216.github.io/index-tec2-CSS3">
+         CSS3</a></li>
+
+         <li><a href = "https://201632110216.github.io/index-tec2-JS">
+         JavaScript</a></li>
+
+         <li><a href = "https://201632110216.github.io/index-tec2-AboutUs">
+         About  us </a></li>
+         </ul></div>    
+</td></tr>
+<td  width = 10% align=center>
+<a href="#top"><c>Return Top</c></a> 
+
+<br><br><br><br><br>
+</td>
+</tr>
+<tr><td align=center colspan=3> <br>
+Little Beetle Online Teaching  @  https://201632110216.github.io/index-tec2-CSS  2017.11.10
+<br></td></tr>
+</table>
+
+</body>
+</html>

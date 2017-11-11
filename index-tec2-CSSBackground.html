@@ -1,0 +1,274 @@
+<html>
+<head>
+  <title> Little Beetle Online Teaching----CSS Background
+</title>
+<!--title  (Queston 1)-->
+<style type="text/css">
+        b{
+          color: black;
+          font-size: 60px;
+          text-align: left;
+          font-style: normal;
+          font-family: "微软雅黑"
+          background-color:gray;
+          background-position: auto;
+   }
+      c{
+        color: yellow;
+        font-size: 50px;
+      }
+      d{
+        background-color: gray;
+      }
+      e{
+        color: red;    /*important*/
+      }
+    
+
+</style>
+<style type="text/css">
+        body
+        { background-image: url("Background3.jpg");
+          background-repeat:repeat;         
+        } 
+        Beetle.pos_abs{
+              position:absolute;
+              left:380px;
+              top:100px;}    
+</style>
+<!--Navigation-->
+<style type="text/css">
+      .navigation ul{
+        margin: 1px;
+        padding: 1px;
+        list-style-type: none;
+         position:absolute;
+              top:300px;
+      }
+
+      .navigation li{
+        margin:0 0 4px 0;
+      }
+      .navigation a{
+        display: block;
+        color:black;
+        background-color: white;
+        width: 130px;
+        padding: 50px 20px;
+        text-decoration: none;
+        border: 3px  solid blue;
+       font-size:23px;
+      }
+      .navigation a:hover{
+        background-color: yellow;
+      }
+ </style>
+</head>
+<body>
+<a name="top"></a>
+<Beetle class = "po<a name="top"></a>
+        <img src="insect yellow.png"
+            title="Believe Yourself !" 
+            width="150"   height="160"></Beetle>
+
+<!--Table model 1-->
+<table border=0 bordercolor=red width=100% align=center>
+
+<tr><td align=left colspan=2>
+       <font color = "black" face = "黑体"  size="+6" >
+       Little Beetle Online Teaching
+</td>
+<td align=right colspan=1>
+<div style = "text-align:right;"> 
+      <input class="placeholder" value="Search keywords......" autocomplete="on" >
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td = width = 10% align=center>
+<!-- Navigation left -->
+<div class="navigation">
+         <ul>
+          <font color = "black" face = "黑体"  size="+3"><li>Css Foundation </li></font>
+         <li><a href ="https://201632110216.github.io/index-tec2-Css">
+         Brief Introduction Of Css</a></li>
+         <li><a href = "https://201632110216.github.io/index-tec2-CSSGrammar">
+         Css Grammar</a></li>
+         <font color = "black" face = "黑体"  size="+3"><li>
+         Css Style </li></font>
+         <li><a href = "https://201632110216.github.io/index-tec2-CSSBackground">
+         CSS Background</a></li>
+         <li><a href = "https://201632110216.github.io/index-tec2-Fonts ">
+         Fonts </a></li>
+         <font color = "black" face = "黑体"  size="+3"><li>
+         Css Selector </li></font>
+         <li><a href = "https://201632110216.github.io/index-tec2-CssSelector">
+         Css Selector</a></li>
+</ul></div>
+</td>
+
+<td width=50% align=left>
+<br><br><br><br><br><br><br><br><br><br>
+  <b>Css Background</b>
+<br><br><br><br><br><br>
+<font color = "black" face = "仿宋"  size="+3">
+<!--Start input  the words or pictures   -->
+CSS allows the use of solid colors as background, and allows the use of background images to create quite complex results.<br>
+CSS's ability to do this is far beyond HTML.
+<br><br><br>
+<c>Background Color</c>
+<br><br>
+You can use the <e>background-color</e> property to set the background color for the element. This property accepts any legal color values.
+This rule sets the background of the element to gray:<br>
+<d>p {background-color: gray;}</d>
+<br><br>
+If you want the background color to extend from the outside of the element's text to the outside, just add some inner margins:<br>
+<d>p {background-color: gray; padding: 20px;}</d>
+<br><br>
+You can set the background color for all elements, including body, inline elements such as EM and a.<br>
+Background-color cannot inherit. Its default value is transparent. Transparent has the meaning of transparency. That is, if an element does not specify the background color, then the background is transparent, so that the background of the ancestral element can be visible.
+<br><br><br>
+<c>Background Image</c>
+<br><br>
+To put images into the background, you need to use the background-image property. The default value of the <e>background-image</e> attribute is none, which means no image is placed on the background.<br>
+If you need to set a background image, you must set a URL value for this property:<br>
+<d>body {background-image: url(/i/eg_bg_04.gif);}</d>
+<br>
+Most backgrounds are applied to body elements, but not limited to this.
+The following example applies a background to a paragraph without the application background of other parts of the document:<br>
+<d>p.flower {background-image: url(/i/eg_bg_03.gif);}</d><br>
+You can even set the background image for inline elements. The following example sets up a background image for a link:<br>
+<d>a.radio {background-image: url(/i/eg_bg_07.gif);}</d><br><br>
+In theory, you can even apply images to the background of replacement elements such as textareas and select, but not all user agents can handle this well.<br>
+And one more thing, background-image can't inherit it. In fact, all of the background properties are not inherited.<br><br><br>
+<c>Background Repetition</c>
+<br><br>
+If you want to tile the background image on the page, you can use the
+ <e>background-repeat</e> property.<br>
+The attribute value repeat causes the image to be tiled horizontally and vertically, just like the usual background image. Repeat-x and repeat-y cause the image to be repeated only horizontally or vertically, while no-repeat does not allow the image to be tiled in any direction.<br>
+By default, the background image starts from the top left corner of an element. Look at the examples below:<br>
+<d>body
+  { 
+  background-image: url(/i/eg_bg_03.gif);
+  background-repeat: repeat-y;
+  }</d><br><br><br>
+<c>Background location</c>
+<br><br>
+You can use the background-position property to change the location of the image in the background.<br>
+In the following example, a background image is placed in the middle of the body element:<br>
+<d>body
+  { 
+    background-image:url('/i/eg_bg_03.gif');
+    background-repeat:no-repeat;
+    background-position:center;
+  }</d><br><br>
+There are many ways to provide values for the background-position attribute. First, you can use some keywords: top, bottom, left, right, and center. Usually, these keywords come in pairs, but not always. You can also use length values, such as 100px or 5cm, and finally use percentile values. There is a slight difference in the placement of background images for different types of values.
+<br><br><br>
+<c>Keyword</c>
+<br><br>
+The key to image placement is easy to understand, and its role is as the name suggests. For example, top right places the image in the upper right corner of the inner margin area of the element.<br>
+According to the specification, key position can appear in any order, as long as no more than two words - a corresponding horizontal direction, vertical direction corresponding to another.<br>
+If there is only one keyword, the other keyword is center.<br>
+So, if you want an image to appear above the middle of each paragraph, just declare as follows:<br>
+<d>p
+  { 
+    background-image:url('bgimg.gif');
+    background-repeat:no-repeat;
+    background-position:top;
+  }</d><br><br>
+<img src="Keywords.jpg"  width = "1012" height ="231"  />
+<br><br><br>
+<c>Percentile Value</c>
+<br><br>
+Percentile values are more complex. Suppose you want to use the percentile value to center the image in its element, which is easy:<br>
+<d>body
+  { 
+    background-image:url('/i/eg_bg_03.gif');
+    background-repeat:no-repeat;
+    background-position:50% 50%;
+  }</d><br>
+This causes the image to be properly placed and its center aligned with the center of the element. In other words,<e> percentile values are applied to elements and images simultaneously</e>. That is, the point (center point) described in the image 50% 50% is aligned with the point (center point) described in the element 50% 50%.<br>
+If the image is located at 0% 0%, the upper left corner will be placed in the upper left corner of the margin area of the element. If the image position is 100% 100%, the lower right corner of the image is placed on the right lower corner of the right distance.<br>
+So, if you want to put an image in the horizontal direction 2/3, vertical 1/3, you can declare that:<br>
+<d>body
+  { 
+    background-image:url('/i/eg_bg_03.gif');
+    background-repeat:no-repeat;
+    background-position:66% 33%;
+  }</d><br>
+If only a percentile value is provided, the value provided will be used as a horizontal value, and the vertical value will be assumed to be 50%. This is similar to the keyword.
+<br>
+The default value of background-position is 0% 0%, which is equivalent to top left in function. This explains why the background image is always tiled from the upper left corner of the inner margin of the element unless you set different position values.<br>
+<br><br>
+<c>Length Value</c>
+<br><br>
+The length value explains the offset in the upper left corner of the inner margin area. The offset point is the upper left corner of the image.
+For example, if you set the value of 50px 100px, the upper left corner of the image will be in the upper left corner of the inner margin of the element, to the right 50 pixels, down to 100 pixels:<br>
+<d>body
+  { 
+    background-image:url('/i/eg_bg_03.gif');
+    background-repeat:no-repeat;
+    background-position:50px 100px;
+  }</d><br>
+Notice that this is different from the percentile, because the offset is only from one upper left to the other left. That is, the upper left corner of the image aligns with the specified point in the background-position declaration.
+<br><br><br>
+<c>Background Association</c>
+<br><br>
+If the document is longer, then the background image scrolls as the document scrolls down. When the document scrolls over to the image, the image disappears.<br>
+You can prevent this scroll through the <e>background-attachment property</e>. With this property, you can declare that the image is fixed (fixed) relative to the viewable area, so it won't be affected by scrolling:<br>
+<d>body 
+  {
+  background-image:url(/i/eg_bg_02.gif);
+  background-repeat:no-repeat;
+  background-attachment:fixed
+  }</d><br>
+The default value of the background-attachment attribute is scroll, that is, by default, the background scrolls with the document.
+<br><br><br><br>
+
+<img src="CSSBackground.jpg"  width="1007" height ="217"   />
+ 
+
+
+</font>
+<!-- END -->         
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!--Navigation  right-->
+</td><td width=10% align=left>
+<div class="navigation">
+         <ul>
+          <font color = "black" face = "黑体"  size="+5"><li>Navigation</li></font>
+         <li><a href ="https://201632110216.github.io/index-tec2">
+         Home</a></li>
+        
+         <li><a href = "https://201632110216.github.io/index-tec2-HTML">
+         HTML</a></li>
+
+         <li><a href = "https://201632110216.github.io/index-tec2-CSS">
+         CSS</a></li>
+
+         <li><a href = "https://201632110216.github.io/index-tec2-CSS3">
+         CSS3</a></li>
+
+         <li><a href = "https://201632110216.github.io/index-tec2-JS">
+         JavaScript</a></li>
+
+         <li><a href = "https://201632110216.github.io/index-tec2-AboutUs">
+         About  us </a></li>
+         </ul></div>    
+</td></tr>
+<td  width = 10% align=center>
+<a href="#top"><c>Return Top</c></a> 
+
+<br><br><br><br><br>
+</td>
+</tr>
+<tr><td align=center colspan=3> <br>
+Little Beetle Online Teaching  @  https://201632110216.github.io/index-tec2-CSS Background   2017.11.11
+<br></td></tr>
+</table>
+
+</body>
+</html>
