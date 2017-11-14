@@ -1,0 +1,217 @@
+<html>
+<head>
+  <title> Little Beetle Online Teaching---HTML Link
+</title>
+<!--title  (Queston 1)-->
+<style type="text/css">
+        b{
+          color: black;
+          font-size: 60px;
+          text-align: left;
+          font-style: normal;
+          font-family: "微软雅黑"
+          background-color:gray;
+          background-position: auto;
+   }
+      c{
+        color: yellow;
+        font-size: 50px;
+      }
+      d{
+        background-color: gray;
+      }
+      e{
+        color: red;
+      }
+      f{
+        color: green;
+        font-size: 50px;
+      }
+    
+
+</style>
+<style type="text/css">
+        body
+        { background-image: url("Background3.jpg");
+          background-repeat:repeat;         
+        } 
+        Beetle.pos_abs{
+              position:absolute;
+              left:380px;
+              top:100px;}    
+</style>
+<!--Navigation-->
+<style type="text/css">
+      .navigation ul{
+        margin: 1px;
+        padding: 1px;
+        list-style-type: none;
+         position:absolute;
+              top:300px;
+      }
+
+      .navigation li{
+        margin:0 0 4px 0;
+      }
+      .navigation a{
+        display: block;
+        color:black;
+        background-color: white;
+        width: 130px;
+        padding: 100px 20px;
+        text-decoration: none;
+        border: 3px  solid blue;
+       font-size:23px;
+      }
+      .navigation a:hover{
+        background-color: yellow;
+      }
+ </style>
+</head>
+<body>
+<a name="top"></a>
+<Beetle class = "pos_abs">
+        <img src="insect yellow.png"
+            title="Believe Yourself !" 
+            width="150"   height="160"></Beetle>
+
+<!--Table model 1-->
+<table border=0 bordercolor=red width=100% align=center>
+
+<tr><td align=left colspan=2>
+       <font color = "black" face = "黑体"  size="+6" >
+       Little Beetle Online Teaching
+</td>
+<td align=right colspan=1>
+<div style = "text-align:right;"> 
+      <input class="placeholder" value="Search keywords......" autocomplete="on" >
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td = width = 10% align=center>
+<!-- Navigation left -->
+<div class="navigation">
+         <ul>
+          <font color = "black" face = "黑体"  size="+3"><li>HTML Foundation </li></font>
+         <li><a href ="https://201632110216.github.io/index-tec2-HTML">
+         Brief Introduction Of HTML</a></li>
+         <li><a href = "https://201632110216.github.io/index-tec2-Link">
+         HTML Link</a></li>
+         <li><a href = "https://201632110216.github.io/index-tec2-Image">
+         HTML Image</a></li>
+         <li><a href = "https://201632110216.github.io/index-tec2-Table ">
+         HTML Table </a></li>
+</ul></div>
+</td>
+
+<td width=50% align=left>
+<br><br><br><br><br><br><br><br><br><br>
+  <b>HTML Link</b>
+<br><br><br><br><br><br>
+<font color = "black" face = "仿宋"  size="+3">
+<!--Start input  the words or pictures   -->
+<c> HTML uses hyperlinks to connect to another document on the network.
+You can find links in almost all web pages. Click on the link to jump from one page to another. </c><br><br>
+For an example:<br>
+How to create a hyperlink in the document?<br><br>
+<d><'html><br>
+<'body><br>
+<'p><br>
+<'a href="/index.html">TEXT<'/a> It's a link to a page in this site.<'/p>
+<br>
+<'p><'a href="http://www.microsoft.com/">TEXT<'/a> It's a link to a web <br>page on the world wide web.<'/p><br>
+<'/body><br>
+<'/html><br>
+</d><br><br><br>
+<c>HTML Hyperlink (link)</c><br><br>
+Hyperlinks can be a word, a word, or a set of words, or an image, and you can click on them to jump to a new document or a part of the current document.<br>
+When you move the mouse pointer to a link in the page, the arrow turns into a small hand.<br>
+We create links in HTML by using the <'a> tag.<br>
+There are two ways to use <'a> tags:<br>
+Create a link to another document by using the href property<br>
+Create a bookmark in a document by using the name attribute<br><br><br>
+<c>HTML Link Syntax</c><br><br>
+The linked HTML code is simple. It's like this:<br><br>
+<d><'a href="url">Link text</a></d><br><br>
+The href property specifies the goal of the link.<br>
+The text between the start tag and the end tag is displayed as a hyperlink.
+<br>
+For an example:<br><br>
+<d><'a href="http://www.baidu.com/">Visit BaiDu<'/a></d><br><br>
+The line above is shown as: Visit BaiDu.<br>
+Clicking on this hyperlink will take the user to the front page of BaiDu.
+<br>
+<e>Hint: "link text" does not necessarily have to be text. Pictures or other HTML elements can be links.</e><br><br><br>
+ <c>HTML link - target property</c><br><br>
+Using the Target property, you can define where the linked document is displayed.<br>
+The line below opens the document in a new window:<br>
+<d><'a href="http://www.BaiDu.com/" target="_blank">Visit BaiDu</a></d>
+<br><br><br>
+<c>HTML link - Name property</c><br><br>
+The name attribute specifies the name of the anchor (anchor).<br>
+You can use the name property to create bookmarks in HTML pages.<br>
+Bookmarks are not displayed in any special way, which is invisible to the reader.<br>
+When using the named anchor (named anchors), we can create a direct jump to the named anchor (such as a section of the page) link, so users do not need to constantly scroll the page to find the information they need.<br>
+The grammar of named anchors:<br>
+<d><'a name="label">anchor(Text displayed on the page.)<'/a></d><br><br>
+<e>Hint: anchor's name can be anything you like.<br><br>
+Hint: you can use the ID property instead of the name attribute, and the named anchor is equally valid.</e>
+<br><br><br>
+<c>Basic considerations - useful tips:</c><br><br>
+Note: always add forward slashes to subfolders. If you write links like this, "href=" "http://www.w3school.com.cn/html", you will generate two HTTP requests to the server. This is because the server adds a forward slash to this address, and then creates a new request, like this: href= "http://www.w3school.com.cn/html/"".<br><br>
+<e>Hint: named anchors are often used to create directories at the beginning of large documents. You can assign a named anchor for each chapter, and then link the links to these anchors to the top of the document. If you visit Baidu encyclopedia frequently, you'll find that almost every entry uses such navigation.<br><br>
+Hint: if the browser cannot find the named anchor that has been defined, it will be positioned at the top of the document. There will be no mistakes.
+</e><br><br><br>
+
+
+
+
+
+
+
+
+
+</font>
+<!-- END -->         
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!--Navigation  right-->
+</td><td width=10% align=left>
+<div class="navigation">
+         <ul>
+          <font color = "black" face = "黑体"  size="+5"><li>Navigation</li></font>
+         <li><a href ="https://201632110216.github.io/index-tec2">
+         Home</a></li>
+        
+         <li><a href = "https://201632110216.github.io/index-tec2-HTML">
+         HTML</a></li>
+
+         <li><a href = "https://201632110216.github.io/index-tec2-CSS">
+         CSS</a></li>
+
+         <li><a href = "https://201632110216.github.io/index-tec2-CSS3">
+         CSS3</a></li>
+
+         <li><a href = "https://201632110216.github.io/index-tec2-JS">
+         JavaScript</a></li>
+
+         <li><a href = "https://201632110216.github.io/index-tec2-AboutUs">
+         About  us </a></li>
+         </ul></div>    
+</td></tr>
+<td  width = 10% align=center>
+<a href="#top"><c>Return Top</c></a> 
+
+<br><br><br><br><br>
+</td>
+</tr>
+<tr><td align=center colspan=3> <br>
+Little Beetle Online Teaching  @  https://201632110216.github.io/index-tec2-HTML Link 2017.11.14
+<br></td></tr>
+</table>
+
+</body>
+</html>
